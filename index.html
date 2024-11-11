@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game">
+        <dvi class="buttons">
+            <button onclick="newGame()">new game</button>
+
+            <img src="./assets/1.jfif" alt="">
+
+            <div class="conatinerButtons">
+                <button class="rollDice" onclick="rollDice()">roll dice</button>
+                <button class="hold" onclick="hold()">hold</button>
+            </div>
+        </dvi>
+
+
+        <div class="player1" >
+            <div class="containerA">
+                <h3>player 1</h3>
+                <h1 class="name1">name 1</h1>
+                <p class="totalScore1">00</p>
+            </div>
+            <div class="containerB">
+                <h2 class="heading1">current score</h2>
+                <p class="currentScore1 grayShadow">00</p>
+            </div>
+        </div>
+        <div class="player2">
+            <div class="containerA">
+                <h3>player 2</h3>
+                <h1 class="name2">name 2</h1>
+                <p class="totalScore2">00</p>
+            </div>
+            <div class="containerB">
+                <h2 class="heading2">current score</h2>
+                <p class="currentScore2 grayShadow">00</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
