@@ -24,8 +24,10 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 15px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
 }
+
+
 
 /* player 1 */
 
@@ -40,7 +42,7 @@ body {
     border-radius: 15px 0px 0px 15px;
 }
 
-.containerA {
+.container1A {
     background-color: beige;
     display: flex;
     flex-direction: column;
@@ -50,7 +52,11 @@ body {
     border: 1px solid;
     border-radius: 10px;
     padding: 10px;
+    height: 180px;
+    width: 270px;
+ text-align: center;
 }
+
 
 .name1 {
     text-transform: capitalize;
@@ -62,7 +68,9 @@ body {
     padding: 0px 2px;
 }
 
-.containerB {
+
+
+.container1B {
     background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
@@ -72,6 +80,10 @@ body {
     border: 1px solid;
     border-radius: 10px;
     padding: 10px;
+    align-items: center;
+    /* height: 90px;
+    width: 230px ;     */
+    text-align: center;
 }
 
 .heading1 {
@@ -96,9 +108,10 @@ body {
     justify-content: space-around;
     align-items: center;
     border-radius: 0px 15px 15px 0px;
+
 }
 
-.containerA {
+.container2A {
     background-color: beige;
     display: flex;
     flex-direction: column;
@@ -108,6 +121,10 @@ body {
     border: 1px solid;
     border-radius: 10px;
     padding: 10px;
+    height: 180px;
+    width: 270px;
+    text-align: center;
+
 }
 
 .name2 {
@@ -120,7 +137,7 @@ body {
     padding: 0px 2px;
 }
 
-.containerB {
+.container2B {
     background-color: blanchedalmond;
     display: flex;
     flex-direction: column;
@@ -130,6 +147,10 @@ body {
     border: 1px solid;
     border-radius: 10px;
     padding: 10px;
+    height: 90px;
+    width: 230px;
+    text-align: center;
+
 }
 
 .heading2 {
@@ -142,62 +163,420 @@ body {
 
 }
 
+
+
 /*  buttons */
 
-.buttons{
+.buttons {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: absolute;
- 
+
 }
-.buttons img{
-width: 45px;
+
+.buttons img {
+    width: 45px;
 }
-.buttons button{
+
+.buttons button {
     font-size: 20px;
     padding: 5px 4px;
     border: 1.5px solid;
     border-radius: 10px;
     text-transform: capitalize;
 }
-.buttons button:hover{
+
+.buttons button:hover {
     background-color: black;
     color: white;
 }
-.buttons button:active{
+
+.buttons button:active {
     transform: scale(105%);
 }
 
-.conatinerButtons{
+.conatinerButtons {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+/* @media only screen and (max-width:1025px) and (min-height:1000px)  */
+
+
+@media only screen and (max-width:950px) and (max-height:1000px) {
+
+ 
+    .game {
+        height: 60vh;
+        position: relative;
+        width: 70vw;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        backdrop-filter: blur(30px);
+    }
+ 
+    .container1A,
+    .container2A {
+        height: 130px;
+        width: 190px;
+    }
+
+    .name1,
+    .name2 {
+        font-size: 22px;
+    }
+
+    .totalScore1,
+    .totalScore2 {
+        font-size: 28px;
+    }
+
+    .container1B,.container2B {
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 6px;
+        height: 80px; 
+        width: 200px ;    
+    }
+    
+    .heading1,.heading2 {
+        font-size: 20px;
+    }
+    
+    .currentScore1,.currentScore2 {
+        font-size: 20px;   
+    }
+
+    .buttons {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+    
+    }
+    
+    .buttons img {
+        width: 35px;
+    }
+    
+    .buttons button {
+        font-size: 14px;
+        padding: 4px 3px;
+        border: 1.5px solid;
+        border-radius: 10px;
+        text-transform: capitalize;
+    }
+    
+}
+
+@media only screen and (max-width:750px) and (max-height:1000px) {
+
+ 
+    .game {
+        height: 60vh;
+        position: relative;
+        width: 85vw;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        backdrop-filter: blur(30px);
+    }
+} 
+
+@media only screen and (max-width:670px) and (max-height:1000px) {
+
+ 
+    .game {
+        height: 60vh;
+        position: relative;
+        width: 85vw;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        backdrop-filter: blur(30px);
+    }
+ 
+    .container1A,
+    .container2A {
+        height: 160px;
+        width: 150px;
+    }
+    .container1A .h3,
+    .container2A .h3 {
+        font-size: 14px !important;
+    }
+
+    .name1,
+    .name2 {
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .totalScore1,
+    .totalScore2 {
+        font-size: 22px;
+    }
+
+    .container1B,.container2B {
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 6px;
+        height: 100px; 
+        width: 150px ;    
+    }
+    
+    .heading1,.heading2 {
+        font-size: 18px;
+    }
+    
+    .currentScore1,.currentScore2 {
+        font-size: 19px;   
+    }
+
+    .buttons {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+    
+    }
+    
+    .buttons img {
+        width: 34px;
+    }
+    
+    .buttons button {
+        font-size: 12px;
+        padding: 4px 3px;
+        border: 1.5px solid;
+        border-radius: 10px;
+        text-transform: capitalize;
+    }
+    
+}
+
+@media only screen and (max-width:530px) and (max-height:1000px) {
+
+ 
+    .game {
+        height: 55vh;
+        position: relative;
+        width: 90vw;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        backdrop-filter: blur(30px);
+    }
+ 
+    .container1A,
+    .container2A {
+        height: 160px;
+        width: 120px;
+    }
+    .container1A .h3,
+    .container2A .h3 {
+        font-size: 14px !important;
+    }
+
+    .name1,
+    .name2 {
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .totalScore1,
+    .totalScore2 {
+        font-size: 22px;
+    }
+
+    .container1B,.container2B {
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 6px;
+        height: 110px; 
+        width: 120px ;    
+    }
+    
+    .heading1,.heading2 {
+        font-size: 17px;
+    }
+    
+    .currentScore1,.currentScore2 {
+        font-size: 18px;   
+    }
+
+    .buttons {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+    
+    }
+    
+    .buttons img {
+        width: 34px;
+    }
+    
+    .buttons button {
+        font-size: 12px;
+        padding: 4px 2px;
+        border: 1.5px solid;
+        border-radius: 10px;
+        text-transform: capitalize;
+        width: 44px;
+    }
+    
+}
+
+@media only screen and (max-width:530px) and (max-height:800px) {
+
+ 
+    .game {
+        height: 60vh;
+        position: relative;
+        width: 90vw;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        backdrop-filter: blur(30px);
+    }
+ 
+    .container1A,
+    .container2A {
+        height: 140px;
+        width: 100px;
+    }
+    .container1A .h3,
+    .container2A .h3 {
+        font-size: 13.5px !important;
+    }
+
+    .name1,
+    .name2 {
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .totalScore1,
+    .totalScore2 {
+        font-size: 21px;
+    }
+
+    .container1B,.container2B {
+        background-color: blanchedalmond;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 6px;
+        height: 100px; 
+        width: 100px ;    
+    }
+    
+    .heading1,.heading2 {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .currentScore1,.currentScore2 {
+        font-size: 17px;   
+    }
+
+    .buttons {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+    
+    }
+    
+    .buttons img {
+        width: 34px;
+    }
+    
+    .buttons button {
+        font-size: 11px;
+        padding: 4px 2px;
+        border: 1.5px solid;
+        border-radius: 10px;
+        text-transform: capitalize;
+        width: 44px;
+    }
+    
+}
+
+
+
+
+
 /*  for toggle */
 
-.borderNone{
+.borderNone {
     border: none;
 }
-.grayShadow{
-   box-shadow:2px 2px 6px 2px gray;
-   padding: 0px 2px;
+
+.grayShadow {
+    box-shadow: 2px 2px 6px 2px gray;
+    padding: 0px 2px;
 }
-.redShadow{
-    box-shadow:2px 2px 6px 2px red;
+
+.redShadow {
+    box-shadow: 2px 2px 6px 2px red;
 
 }
 
-.rotation{
+.rotation {
     animation: rotateDice 1s ease;
 }
-@keyframes rotateDice{
-    50%{
-        transform:rotate(180deg) scale(135%);
+
+@keyframes rotateDice {
+    50% {
+        transform: rotate(180deg) scale(135%);
     }
-    100%{
+
+    100% {
         transform: rotate(180deg) scale(1)
     }
 }

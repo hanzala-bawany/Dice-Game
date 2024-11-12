@@ -1,10 +1,16 @@
-let player1Name = prompt("player 1 name").toUpperCase().trim();
-let player2Name = prompt("player 2 name").toUpperCase().trim();
+// let player1Name = prompt("player 1 enter name").toUpperCase().trim();
+//  while (player1Name.length > 14){
+//     player1Name = prompt("Name Can Not Greater Then 14").toUpperCase().trim();
+//  }
+// let player2Name = prompt("player 2 enter name").toUpperCase().trim();
+// while (player2Name.length > 14){
+//     player2Name = prompt("Name Can Not Greater Then 14").toUpperCase().trim();
+//  }
 
-document.body.querySelector(".name1").innerHTML=player1Name
-document.body.querySelector(".name2").innerHTML=player2Name
+// document.body.querySelector(".name1").innerHTML=player1Name
+// document.body.querySelector(".name2").innerHTML=player2Name
 
-alert('player 1 : ' + player1Name + " start")
+// alert('player 1 : ' + player1Name + " start")
 
 let player1Turn = true;
 let player2Turn = false;
