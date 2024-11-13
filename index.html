@@ -9,6 +9,16 @@
 </head>
 
 <body>
+    <!-- <button onclick="modalOpen()">new game</button> -->
+    
+    <div class="parentWinModal">
+        <div class="winModal">
+            <span class="wName"></span> You Win
+            <img onclick="modalClose()" src="./assets/close img.png" alt="close img">
+        </div>
+    </div>
+
+
     <div class="game">
         <dvi class="buttons">
             <button onclick="newGame()">new game</button>
@@ -22,10 +32,13 @@
         </dvi>
 
 
-        <div class="player1" >
+
+
+
+        <div class="player1">
             <div class="container1A">
                 <h3 class="h3">player 1</h3>
-                <h1 class="name1">Name 2</h1>
+                <h1 class="name1">name 1</h1>
                 <p class="totalScore1">00</p>
             </div>
             <div class="container1B">
@@ -36,7 +49,7 @@
         <div class="player2">
             <div class="container2A">
                 <h3 class="h3">player 2</h3>
-                <h1 class="name2">Name 1</h1>
+                <h1 class="name2">name 2</h1>
                 <p class="totalScore2">00</p>
             </div>
             <div class="container2B">
@@ -44,8 +57,9 @@
                 <p class="currentScore2 grayShadow">00</p>
             </div>
         </div>
-
     </div>
+
+
 
 
     <script src="app.js"></script>
